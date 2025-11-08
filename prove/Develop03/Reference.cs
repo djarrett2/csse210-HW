@@ -24,11 +24,11 @@ public class Reference
         string reference;
         if (_startVerse != _endVerse)
         {
-            reference = $"{_book} {_chapter} {_startVerse}-{_endVerse}:";
+            reference = $"{_book} {_chapter}:{_startVerse}-{_endVerse}:";
         }
         else
         {
-            reference = $"{_book} {_chapter} {_startVerse}:";
+            reference = $"{_book} {_chapter}:{_startVerse}:";
         }
         return reference;
     }
