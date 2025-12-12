@@ -23,19 +23,9 @@ public class Video
         return _comments.Count;
     }
 
-    public string GetTitle()
+    public string DisplayVideos()
     {
-        return _title;
-    }
-
-    public string GetAuthor()
-    {
-        return _author;
-    }
-
-    public int GetLength()
-    {
-        return _length;
+        return $"Title: {_title}\nAuthor: {_author}\nLength: {_length} seconds\nNumber of Comments: {GetCommentCount()}";
     }
 
     public List<Comments> GetComments()

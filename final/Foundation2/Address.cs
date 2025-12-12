@@ -14,12 +14,12 @@ public class Address
     }
 
     public bool InUSA()
-        {
-            return _country.ToUpper() == "USA" || _country.ToUpper() == "UNITED STATES";
-        }
+    {
+        return _country.ToUpper() == "USA" || _country.ToUpper() == "UNITED STATES";
+    }
 
-        public string GetAddress()
-        {
-            return $"{_streetAddress}\n{_city}, {_state}\n{_country}";
-        }
+    public string GetFullAddress()
+    {
+        return $"{_streetAddress}\n{_city}, {_state}\n{_country}";
+    }
 }

@@ -10,17 +10,17 @@ public class Customer
     }
     
     public bool LivesInUSA()
-        {
-            return _address.InUSA();
-        }
+    {
+        return _address.InUSA();
+    }
 
-        public string GetName()
-        {
-            return _name;
-        }
+    public string GetName()
+    {
+        return _name;
+    }
 
-        public Address GetAddress()
-        {
-            return _address;
-        }
+    public Address GetAddress()
+    {
+        return _address;
+    }
 }

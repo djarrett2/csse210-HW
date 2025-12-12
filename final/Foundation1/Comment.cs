@@ -9,13 +9,8 @@ public class Comments
         _comment = comment;
     }
 
-    public string GetName()
+    public string DisplayComments()
     {
-        return _name;
-    }
-
-    public string GetComment()
-    {
-        return _comment;
+        return $"  - {_name}: {_comment}";
     }
 }

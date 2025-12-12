@@ -32,7 +32,7 @@ public class Order
         label += "==============\n";
         foreach (Product product in _products)
         {
-            label += $"{product.GetName()} (ID: {product.GetProductId()})\n";
+            label += $"{product.GetProductName()} (ID: {product.GetProductId()})\n";
         }
         return label;
     }
@@ -42,7 +42,7 @@ public class Order
         string label = "Shipping Label:\n";
         label += "===============\n";
         label += $"{_customer.GetName()}\n";
-        label += _customer.GetAddress().GetAddress();
+        label += _customer.GetAddress().GetFullAddress();
         return label;
     }
 }
